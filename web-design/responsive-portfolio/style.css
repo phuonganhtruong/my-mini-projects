@@ -1,0 +1,146 @@
+/* Global View aka Desktop View */
+
+body {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+
+.header-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+   }
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mybutton {
+    border: 1px white solid;
+    padding: 10px 25px;
+    margin-left: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding-top: 140px;
+    min-height: 700px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(41, 245, 177);
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.col p {
+    font-size: 0.825rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hD {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+
+    .col {
+        width: 45%;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .hD {
+        display: block;
+    }
+
+    header {
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        padding: 40px 0px;
+    }
+
+    .mybutton {
+        display: none;
+    }
+
+    .mob-wrapper {
+        display: block;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: coral;
+        padding: 15px 20px;
+        margin-left: -60px;
+        text-align: center;
+    }
+
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+
+    .col {
+        width: 100%;
+    }
+
+    header {
+        padding: 0 25px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+ 
+}
